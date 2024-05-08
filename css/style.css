@@ -12,7 +12,112 @@
 .fa-solid {
     color: var(--main-color);
 }
+/*code de l'entête*/
+.container {
+    display: flex;
+    justify-content: space-between; /* Place les éléments à chaque extrémité */
+    align-items: center; /* Centre les éléments verticalement */
+}
 
+.logo-container {
+  margin: 0px;
+
+}
+.logo{
+    width: 61.09px;
+   height: 19px;
+}
+.nav-container {
+    /* Aucun style particulier nécessaire car il sera placé automatiquement à droite */
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none; /* Supprime les puces */
+}
+
+.nav-list li {
+    margin-left: 20px; /* Espacement entre les liens */
+}
+.entête{
+    width: 1340px
+   height: 53px;
+}
+aside{
+
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 18.78px;
+   text-align: left;
+}
+h2{
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25.83px;
+  text-align: left;
+
+}
+.logo1{
+    display: none;
+}
+.formulaireseach{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.champ{
+ height: 42px; 
+}
+.logof{
+    width: 50px;
+   height: 49px;
+  border-radius: 15px 0px 0px 15px;
+  border: 1px 0px 0px 0px;
+  float: left;
+}
+.container-filtre{
+    display: grid;
+    grid-template-columns: 50px 173px 134px 170px 167px;
+   
+}
+figure{
+    margin: 0px;
+}
+figcaption{
+    display: flex;
+   justify-content: center;
+}
+.button{
+    background-color: rgb(79, 79, 252);
+    color: aliceblue;
+    height: 51px;
+    width: 132px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-style: solid;
+    border-color: aliceblue;
+ 
+}
+.buttonf{
+    border: 1px black solid;
+    border-radius: 50px;
+    margin: 4%;
+    padding: 5px;
+}
+.containerbutton:hover {
+    border-radius: 50px;
+    line-height: 25px;
+    font-weight: 100px;
+    border-color: aquamarine;
+    background-color: rgb(229, 248, 242);
+}
+.filtrage {
+    border: 1px white none;
+    height: 20px;
+    float: left;
+    margin-right: 5px;
+    padding: 4px;
+
+}
 body {
     display: flex;
     justify-content: center;
@@ -25,9 +130,10 @@ body {
     box-sizing: border-box;
 }
 
-a {
+a:active {
     color: inherit;
     text-decoration: none;
+    background-color: #0065FC;
 }
 
 .section-title {
@@ -62,6 +168,7 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
 }
 
 .hebergements-and-populaires section {
@@ -80,7 +187,9 @@ a {
 .populaires {
     width: 32%;
 }
-
+.hébergement-card{
+    display: flex;
+}
 .populaires-title {
     display: flex;
     justify-content: space-between;
