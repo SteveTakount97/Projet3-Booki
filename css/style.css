@@ -77,14 +77,17 @@ h2{
 .container-filtre{
     display: grid;
     grid-template-columns: 50px 173px 134px 170px 167px;
+   margin-bottom: 30px;
    
 }
 figure{
-    margin: 0px;
+   margin: auto;
+}
+.filtrage0{
+    margin-top: 10px;
 }
 figcaption{
-    display: flex;
-   justify-content: center;
+  padding-top: 5px;
 }
 .button{
     background-color: rgb(79, 79, 252);
@@ -130,10 +133,9 @@ body {
     box-sizing: border-box;
 }
 
-a:active {
+a{
     color: inherit;
     text-decoration: none;
-    background-color: #0065FC;
 }
 
 .section-title {
@@ -147,11 +149,27 @@ a:active {
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
-
+.card-hébergement{
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    width: 200px;
+    height: 230px;
+}
 .card img {
     object-fit: cover;
 }
-
+.card .images-h{
+    object-fit: cover;
+}
+.images-h{
+    width: 200px;
+    height: 124px;
+    float: top;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
 .card-title {
     font-size: 16px;
 }
@@ -187,9 +205,7 @@ a:active {
 .populaires {
     width: 32%;
 }
-.hébergement-card{
-    display: flex;
-}
+
 .populaires-title {
     display: flex;
     justify-content: space-between;
@@ -207,7 +223,23 @@ a:active {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+.hébergement-cards {
+   display: flex;
+   flex-wrap: wrap;
+  gap: 30px;
+}
+.plus{
+    margin-top: 30px;
+}
+.card-content-hébergement{
+   
+ }
+.card-rating-hébergement{
+   display: flex;
+   justify-content: left;
+   align-items: ;
 
+}
 .populaires-cards .card-content {
     width: 67%;
     padding-left: 15px;
@@ -217,11 +249,14 @@ a:active {
     box-sizing: border-box;
 }
 
-.populaires-cards .card-title {
+.populaires-cards .card-title{
     margin-top: 10px;
     margin-bottom: 4px;
 }
-
+.hébergement-cards{
+    margin-top: 30px;
+    margin-bottom: 4px;
+}
 .populaires-cards .card-subtitle {
     margin: 0;
 }
@@ -229,8 +264,36 @@ a:active {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
-
-
+.directionRow{
+    display: flex;
+    justify-content: space-between;
+}
+.elementM {
+    width: 297px;
+    height: 439px;
+    border: 5px white solid;
+    border-radius: 12px;
+    margin-left: 0%;
+    float: top;
+}
+.basdepage{
+    display: flex;
+    gap: 50px;
+    background-color: #F2F2F2;
+    margin-top: 40px;
+}
+.nav-list-footer{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    
+}
+.div-footer{
+    width: 446px;
+    height: 164px;
+    text-align: left;
+    margin-left: 0px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
