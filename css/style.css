@@ -171,24 +171,21 @@ body {
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    width: 200px;
-    height: 230px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .card img {
     object-fit: cover;
 }
 
-.card .images-h {
-    object-fit: cover;
-}
-
 .images-h {
-    width: 200px;
-    height: 124px;
-    float: left;
+    width: 16vw;
+    height: 130px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    object-fit: cover;
 }
 
 .card-title {
@@ -248,7 +245,10 @@ body {
 .hébergement-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+   justify-content: space-evenly;
+   gap: 15px;
+  
+    
 }
 
 .plus {
@@ -256,7 +256,10 @@ body {
 }
 
 .card-content-hébergement {
-    
+width: 100%;
+ padding-bottom: 15px;
+ margin-top: 0px;
+ box-sizing: border-box;
 }
 
 .card-rating-hébergement {
@@ -297,17 +300,23 @@ body {
 }
 
 .elementM {
-    width: 297px;
-    height: 400px;
+    width: 98%;
+    height: 380px;
     border: 5px white solid;
     border-radius: 12px;
     margin-left: 0%;
-    float: top;
+    object-fit: cover;
 }
-
+.div-m{
+    width: 23%;
+    height: 439px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* ombre */;
+    box-sizing: border-box;
+}
 .basdepage {
     display: flex;
-    gap: 50px;
+  justify-content: space-between;
     background-color: #F2F2F2;
     margin-top: 40px;
 }
@@ -362,6 +371,37 @@ body {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    /*mon code ajouter*/
+    .directionRow{
+        display: flex;
+        justify-content: space-between;
+    }
+    .div-m{
+        width: 24%;
+        height: 270px;
+        border-radius: 20px;
+    }
+    .elementM{
+        width: 95%;
+        height: 200px;
+        gap: 0px;
+        border-radius: 20px 20px 0px 0px;
+        opacity: 0px;
+        border-radius: 20px; 
+    }
+    .hébergement-cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .images-h {
+        width: 23vw;
+        height: 130px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        object-fit: cover;
+        
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
