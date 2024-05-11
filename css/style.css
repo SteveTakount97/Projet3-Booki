@@ -115,7 +115,7 @@ figcaption {
 }
 
 .buttonf {
-    border: 1px black solid;
+    border: 2px solid var(--main-bg-color);
     border-radius: 50px;
     margin: 4%;
     padding: 5px;
@@ -207,6 +207,12 @@ body {
 }
 .card-hébergement {
     width: 16vw;
+    margin-bottom: 10px;
+}
+@media (min-width: 1500px) {
+    .card-hébergement {
+        width: 250PX; /* Limite la largeur maximale à 1500 pixels */
+    }
 }
 
 .card img {
@@ -313,10 +319,12 @@ width: 100%;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* ombre */;
     box-sizing: border-box;
 }
+footer{
+    background-color: var(--main-bg-color);
+}
 .basdepage {
     display: flex;
   justify-content: space-between;
-    background-color: #F2F2F2;
     margin-top: 40px;
 }
 
