@@ -29,8 +29,8 @@
     height: 19px;
 }
 
-.nav-container {
-    /* Aucun style particulier nécessaire car il sera placé automatiquement à droite */
+.seach{
+    display: none;
 }
 
 .nav-list {
@@ -175,19 +175,6 @@ body {
     flex-direction: column;
 
 }
-
-.card img {
-    object-fit: cover;
-}
-
-.images-h {
-    width: 16vw;
-    height: 130px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    object-fit: cover;
-}
-
 .card-title {
     font-size: 16px;
 }
@@ -218,6 +205,20 @@ body {
 .hebergements {
     width: 65%;
 }
+.card-hébergement {
+    width: 16vw;
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.images-h {
+    height: 130px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
+}
 
 /* Populaires */
 .populaires {
@@ -245,9 +246,7 @@ body {
 .hébergement-cards {
     display: flex;
     flex-wrap: wrap;
-   justify-content: space-evenly;
-   gap: 15px;
-  
+   justify-content: space-between;
     
 }
 
@@ -359,7 +358,10 @@ width: 100%;
         flex-direction: row;
         justify-content: space-between;
     }
-
+    .card-hébergement{
+       width: 95%;
+    }
+    
     .populaires-cards a {
         width: 30%;
     }
@@ -401,14 +403,19 @@ width: 100%;
         object-fit: cover;
         
     }
+    .seach{
+        display: none;
+    }
 
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-
+    .hebergements-and-populaires .hebergements{
+        background-color: white;
+    }
     .main-container {
-        width: 375px;
+        width: 100%;
         padding: 0 10px;
         box-sizing: border-box;
     }
@@ -418,9 +425,13 @@ width: 100%;
        flex-wrap: wrap;
        justify-content: space-between;
   }
+  .nav-container{
+    width: 100%;
+  }
   .nav-list{
    padding-left: 0px;
-   width: 375px;
+   display: flex;
+   justify-content: space-between;
   }
   .nav-list li{
     padding: 0px 35px;
@@ -432,7 +443,7 @@ width: 100%;
   .logo{
     width: 61px;
     height: 19px;
-    margin-left: 40%;
+    margin-left: 48%;
   }
   .entête-h2{
     padding: 0px;
@@ -441,17 +452,26 @@ width: 100%;
 
   /*barre de recherche*/
   .champ{
-    width: 60%;
+    width: 65%;
     border: 1px snow solid;
   }
 form{
     width: 100%;
 }
 .button{
-   width: 15%;
-   background-image: url('Images/logo/Vector.png');
+   width: 12%;
    background-position: center;
+   background-size: contain;
    border-radius: 15px;
+}
+.seach{
+   display: block;
+    background-size: cover;
+   position: absolute;
+   top: 220px;
+   left: 78%;
+   width: 35px;
+   height: 17px;
 }
 .button[value]{
     color: transparent;
@@ -463,8 +483,8 @@ form{
 /*le filtre*/
 .container-filtre{
     display: grid;
-        grid-template-columns: 170px 170px;
-        gap: 30px;
+        grid-template-columns: 49% 49%;
+        gap: 2%;
         width: 100%;
     }
     .filtrage-0 {
@@ -475,12 +495,12 @@ form{
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column;
-        width: 375px;
+        width: 100%;
     }
     
     .populaires {
         order: 1; /* Pour placer ce conteneur en premier */
-        width: 100%;
+        
     }
     
     .hebergements {
@@ -490,16 +510,19 @@ form{
         display: flex;
         flex-direction: column;
     }
+    .hébergement-cards{
+        margin-left: auto;
+    }
     .card{
-        width: 300px;
+        width: 73vw;
     }
     .card-hébergement{
-        width: 330px;
+        width: 73vw;
         display: flex;
         flex-direction: column;
     }
     .images-h{
-        width: 98%;
+        width: 100%;
     }
     .directionRow{
         display: flex;
@@ -509,7 +532,7 @@ form{
         width: 98%;
     }
     .div-m{
-        width: 375px;
+        width: 100%;
     }
     .basdepage{
         display: flex;
