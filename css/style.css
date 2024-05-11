@@ -74,7 +74,8 @@ h2 {
 
 .champ {
     height: 42px; 
-    border: 1px var(--filter-bg-color) transparent;
+    border: 1px solid var(--main-bg-color);
+    border-right: none;
 }
 
 .logof {
