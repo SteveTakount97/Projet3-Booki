@@ -156,7 +156,7 @@ figure {
 }
 
 figcaption {
-    padding-top: 5px;
+    padding-top: 15px;
 }
 
 .button {
@@ -177,11 +177,12 @@ figcaption {
     border-radius: 50px;
     margin: 4%;
     padding: 5px;
+    height: 50px;
 }
 
 .containerbutton:hover {
     border-radius: 50px;
-    font-weight: 100px;
+    font-weight: 100;
     border: 1px solid #f2f2f2; 
     background-color: #f2f2f2;
 }
@@ -192,6 +193,7 @@ figcaption {
     float: left;
     margin-right: 5px;
     padding: 4px;
+    padding-top: 15px;
 }
 
 body {
@@ -226,7 +228,7 @@ body {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.card-hébergement {
+.card-hebergement {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
@@ -265,12 +267,12 @@ body {
 .hebergements {
     width: 65%;
 }
-.card-hébergement {
+.card-hebergement {
     width: 16vw;
     margin-bottom: 10px;
 }
 @media (min-width: 1500px) {
-    .card-hébergement {
+    .card-hebergement {
         width: 250PX; /* Limite la largeur maximale à 1500 pixels */
     }
 }
@@ -309,7 +311,7 @@ body {
     border-bottom-left-radius: 20px;
 }
 
-.hébergement-cards {
+.hebergement-cards {
     display: flex;
     flex-wrap: wrap;
    justify-content: space-between;
@@ -320,14 +322,14 @@ body {
     margin-top: 30px;
 }
 
-.card-content-hébergement {
+.card-content-hebergement {
 width: 100%;
  padding-bottom: 15px;
  margin-top: 0px;
  box-sizing: border-box;
 }
 
-.card-rating-hébergement {
+.card-rating-hebergement {
     display: flex;
     justify-content: left;
 }
@@ -346,7 +348,7 @@ width: 100%;
     margin-bottom: 4px;
 }
 
-.hébergement-cards {
+.hebergement-cards {
     margin-top: 30px;
     margin-bottom: 4px;
 }
@@ -435,7 +437,7 @@ width: 100%;
         flex-direction: row;
         justify-content: space-between;
     }
-    .card-hébergement{
+    .card-hebergement{
        width: 95%;
     }
     
@@ -466,9 +468,8 @@ width: 100%;
         gap: 0px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        opacity: 0px;
     }
-    .hébergement-cards{
+    .hebergement-cards{
         display: flex;
         flex-wrap: wrap;
     }
@@ -615,13 +616,13 @@ body{
         display: flex;
         flex-direction: column;
     }
-    .hébergement-cards{
+    .hebergement-cards{
         margin-left: auto;
     }
     .card{
         width: 80vw;
     }
-    .card-hébergement{
+    .card-hebergement{
         width: 80vw;
         display: flex;
         flex-direction: column;
@@ -632,6 +633,7 @@ body{
     .directionRow{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         padding: 0;
     }
     .amarseille{
@@ -643,7 +645,7 @@ body{
     .div-m{
         width: 90%;
         margin-bottom: 10px;
-        margin: 30px;
+        margin: 10px;
     }
     /* footer */
     .section-footer {
@@ -651,8 +653,8 @@ body{
         width: 100%;
     }
     .footer-list {
-        width: 100%;
         padding: 20px 0 30px 30px;
+        width: 50%;
     }
     .filtrage-0{
         padding-left: 15px;
